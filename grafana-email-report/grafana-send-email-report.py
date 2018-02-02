@@ -29,7 +29,7 @@ def send_email(from_email, to_email, smtp_server, filename1, filename2, filename
     msgText = MIMEText('This is the alternative plain text message.')
     msgAlternative.attach(msgText)
     msgText = MIMEText(
-        'Report generated on x-stats-02 <br><img src="cid:image1"><br> <br><img src="cid:image2"><br> <br><img src="cid:image3"><br>',
+        '<br><img src="cid:image1"><br> <br><img src="cid:image2"><br> <br><img src="cid:image3"><br>',
         'html')
     msgAlternative.attach(msgText)
     fp1 = open(filename1, 'rb')
